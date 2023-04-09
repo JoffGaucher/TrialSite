@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url("/fonty/Poppins-Regular.ttf") format("truetype");
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins Regular', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-weight: 300;
+    color: #111;
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logo {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #fb911f
+}
+
+.navbar {
+    display:flex;
+    position: relative;
+}
+
+.navbar li {
+    list-style:none;
+}
+
+.navbar a {
+    color:#fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700px;
+}
+
+.btn-reserve {
+    padding: 10px 20px;
+    background :#fb911f;
+    margin-top: -10px;
+    text-transform :uppercase; /*Mettre le texte en majuscule */
+}
+
+.btn-reserve:hover{      /*Bouton Hover*/
+    background-color: #d87710;
+    transition: ease-out; 
+}
+
+header .navbar li a:hover{    
+    color:#fb911f;     /* Changer la couleur des éléments du header en orange */
+    border-bottom: 2px solid #fb911f; /* Ajouter une bordure orange en dessous */
+}
+
+
+.banniere {
+    position: relative;
+    width: 100%; /* Pour que le contenu fasse 100% de la taille */
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/Danae.JPEG");
+    background-size: cover;
+}
+
+.banniere .contenu{
+    max-width: 70%;
+    text-align :center;
+
+}
+
+.banniere .contenu h2{
+    color:#fff;
+    font-size: 3em;
+    text-transform: capitalize; /* Chaque mot commence avec une maj */
+}
+
+.contenu p:nth-child(2){
+    color: #ffff;
+    font-size: 1.2em;
+}
+
+.btn1 {
+    font-size:1em;
+    color:#fff;
+    background:#fb911f;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top:20px;
+    text-transform: uppercase;
+    text-decoration:none;
+    letter-spacing: 0.2px;  /*Espacer les lettres de x pixel */
+    transition: 0.5s;
+    margin-left:10px;
+}
+
+.btn2 {
+    font-size:1em;
+    color:#fff;
+    background:#2a4963;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top:20px;
+    text-transform: uppercase;
+    text-decoration:none;
+    letter-spacing: 0.2px;  /*Espacer les lettres de x pixel */
+    transition: 0.5s;
+    margin-left:10px;
+}
+
+.btn1:hover{
+    letter-spacing: 2px; /*Espacer les lettres avec un hover */
+}
+
+
+section {
+    padding: 100px;
+}
+
+.row {
+    position:relative;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.row .col50 {
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .col50 h2{
+    margin-bottom: 20px;
+
+}
+
+.titre-texte{
+    color:#000;
+    font-size:2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+
+.titre-texte span{
+    color:#fb911f;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+.row .col50 img{
+    height:450px;
+    width:600px;
+    position: relative;
+}
+
+
+.titre{
+    display:flex; /*éléments sur la même ligne */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*mettre en colonne*/
+}
+
+.dessin{
+    margin-top: -100px;
+}
+
+.dessin .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:40px;
+}
+
+.dessin .contenu .box{
+    width: 350px;
+    margin:10px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+.dessin .contenu .box .imbox{
+    position:relative;
+    width: 100%;
+    height: 300px;
+}
+
+.dessin .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:300px;
+    object-fit: cover;
+}
+
+
+.dessin .contenu .box .text{
+    text-align: center;
+    font-weight: 300px;
+    color:#111
+}
+
+.dessin .contenu .box .text h3{
+    font-weight: 400px;
+}
